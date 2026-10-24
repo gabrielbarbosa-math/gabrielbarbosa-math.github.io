@@ -1,6 +1,6 @@
 ---
-   layout: default
-   title: Home
-   ---
+layout: default
+title: Home
+---
 
-   Welcome to my site!
+Welcome to my site!
