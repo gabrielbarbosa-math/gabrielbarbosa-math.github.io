@@ -1,0 +1,126 @@
+---
+layout: none
+title: Your Name
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+    }
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      gap: 60px;
+    }
+    .sidebar {
+      flex: 0 0 240px;
+      align-self: flex-start;
+      position: sticky;
+      top: 40px;
+    }
+    .sidebar img {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .sidebar h1 {
+      font-size: 1.6em;
+      margin: 0 0 4px;
+    }
+    .sidebar .role {
+      margin: 0 0 12px;
+      color: #666;
+      font-size: 0.95em;
+    }
+    .sidebar a {
+      color: #1a5fb4;
+      word-break: break-all;
+    }
+    .content {
+      flex: 1;
+      min-width: 0;
+    }
+    .content h2 {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+      margin: 0 0 16px;
+    }
+    .content section {
+      margin-bottom: 48px;
+    }
+    .pubs {
+      padding-left: 20px;
+    }
+    .pubs li {
+      margin-bottom: 14px;
+    }
+    @media (max-width: 720px) {
+      .container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 32px 20px;
+      }
+      .sidebar {
+        flex: none;
+        position: static;
+        width: 100%;
+      }
+      .sidebar img {
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="photo.jpg" alt="Photo of Your Name">
+      <h1>Your Name</h1>
+      <p class="role">Your Position<br>Your Affiliation</p>
+      <p><a href="mailto:you@example.com">you@example.com</a></p>
+    </aside>
+
+    <main class="content">
+      <section>
+        <h2>About</h2>
+        <p>
+          Write a few sentences about yourself: your research interests,
+          background, and what you work on now.
+        </p>
+        <p>
+          Currently, I am a postdoc at UFMG, in Belo Horizonte, where I [brief description of current work].
+        </p>
+      </section>
+
+      <section>
+        <h2>Publications</h2>
+        <ol class="pubs">
+          <li>
+            Author A, <strong>Your Name</strong>, Author B (2025).
+            <em>Title of the paper.</em> Journal Name, 12(3), 45–67.
+          </li>
+          <li>
+            <strong>Your Name</strong>, Author C (2024).
+            <em>Title of another paper.</em> Conference Name, pp. 1–10.
+          </li>
+        </ol>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
